@@ -7,6 +7,7 @@
 [![Lines of Code](https://tokei.rs/b1/github/bin456789/reinstall?category=code&label=Lines%20of%20Code&style=flat-square)](https://github.com/XAMPPRocky/tokei)
 [![Telegram Group](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/reinstall_os)
 [![Github Sponsors](https://img.shields.io/badge/sponsor-30363D?style=flat-square&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/bin456789)
+
 <!-- [![Lines of Code](https://aschey.tech/tokei/github/bin456789/reinstall?category=code&label=Lines%20of%20Code&style=flat-square)](https://github.com/aschey/vercel-tokei) -->
 
 一键重装脚本 [English](README.en.md)
@@ -31,26 +32,26 @@
 
 目标系统的配置要求如下：
 
-| 目标系统                                                                                                                                                                                                                                                        | 版本                                  | 内存      | 硬盘         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------- | ------------ |
-| <img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" /> Alpine                                                                                                                                                                         | 3.18, 3.19, 3.20, 3.21                | 256 MB    | 1 GB         |
-| <img width="16" height="16" src="https://www.debian.org/favicon.ico" /> Debian                                                                                                                                                                                  | 9, 10, 11, 12                         | 256 MB    | 1 ~ 1.5 GB ^ |
-| <img width="16" height="16" src="https://github.com/bin456789/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" /> Kali                                                                                                                            | 滚动                                  | 256 MB    | 1 ~ 1.5 GB ^ |
-| <img width="16" height="16" src="https://canonical-subiquity.readthedocs-hosted.com/en/latest/_static/favicon.png" /> Ubuntu                                                                                                                                    | 16.04, 18.04, 20.04, 22.04, 24.04     | 512 MB \* | 2 GB         |
-| <img width="16" height="16" src="https://img.alicdn.com/imgextra/i1/O1CN01oJnJZg1yK4RzI4Rx2_!!6000000006559-2-tps-118-118.png" /> Anolis                                                                                                                        | 7, 8                                  | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://www.oracle.com/asset/web/favicons/favicon-32.png" /> Oracle                                                                                                                                                            | 7, 8, 9                               | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://www.redhat.com/favicon.ico" /> RedHat &nbsp; <img width="16" height="16" src="https://almalinux.org/fav/favicon.ico" /> AlmaLinux &nbsp; <img width="16" height="16" src="https://rockylinux.org/favicon.png" /> Rocky | 8, 9                                  | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://opencloudos.org/qq.ico" /> OpenCloudOS                                                                                                                                                                                 | 8, 9                                  | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://www.centos.org/assets/icons/favicon.svg" /> CentOS                                                                                                                                                                     | 9, 10                                 | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://fedoraproject.org/favicon.ico" /> Fedora                                                                                                                                                                               | 40, 41                                | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://www.openeuler.org/favicon.ico" /> openEuler                                                                                                                                                                            | 20.03, 22.03, 24.03                   | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://static.opensuse.org/favicon.ico" /> openSUSE                                                                                                                                                                           | 15.5, 15.6, Tumbleweed (滚动)         | 512 MB \* | 5 GB         |
-| <img width="16" height="16" src="https://github.com/user-attachments/assets/99a542b6-6482-4086-addf-f192c06fef73" /> NixOS                                                                                                                                      | 24.11                                 | 512 MB    | 5 GB         |
-| <img width="16" height="16" src="https://archlinux.org/static/favicon.png" /> Arch                                                                                                                                                                              | 滚动                                  | 512 MB    | 5 GB         |
-| <img width="16" height="16" src="https://www.gentoo.org/assets/img/logo/gentoo-g.png" /> Gentoo                                                                                                                                                                 | 滚动                                  | 512 MB    | 5 GB         |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (DD)                                                                                                       | 任何                                  | 512 MB    | 取决于镜像   |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (ISO)                                                                                                      | Vista, 7, 8.x (Server 2008 ~ 2012 R2) | 512 MB    | 25 GB        |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (ISO)                                                                                                      | 10, 11 (Server 2016 ~ 2025)           | 1 GB      | 25 GB        |
+| 目标系统                                                                                                                                                                                                                                                                    | 版本                                  | 内存     | 硬盘         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | -------- | ------------ |
+| `<img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" />` Alpine                                                                                                                                                                                 | 3.18, 3.19, 3.20, 3.21                | 256 MB   | 1 GB         |
+| `<img width="16" height="16" src="https://www.debian.org/favicon.ico" />` Debian                                                                                                                                                                                          | 9, 10, 11, 12                         | 256 MB   | 1 ~ 1.5 GB ^ |
+| `<img width="16" height="16" src="https://github.com/bin456789/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" />` Kali                                                                                                                                    | 滚动                                  | 256 MB   | 1 ~ 1.5 GB ^ |
+| `<img width="16" height="16" src="https://canonical-subiquity.readthedocs-hosted.com/en/latest/_static/favicon.png" />` Ubuntu                                                                                                                                            | 16.04, 18.04, 20.04, 22.04, 24.04     | 512 MB\* | 2 GB         |
+| `<img width="16" height="16" src="https://img.alicdn.com/imgextra/i1/O1CN01oJnJZg1yK4RzI4Rx2_!!6000000006559-2-tps-118-118.png" />` Anolis                                                                                                                                | 7, 8                                  | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://www.oracle.com/asset/web/favicons/favicon-32.png" />` Oracle                                                                                                                                                                    | 7, 8, 9                               | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://www.redhat.com/favicon.ico" />` RedHat &nbsp; `<img width="16" height="16" src="https://almalinux.org/fav/favicon.ico" />` AlmaLinux &nbsp; `<img width="16" height="16" src="https://rockylinux.org/favicon.png" />` Rocky | 8, 9                                  | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://opencloudos.org/qq.ico" />` OpenCloudOS                                                                                                                                                                                         | 8, 9                                  | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://www.centos.org/assets/icons/favicon.svg" />` CentOS                                                                                                                                                                             | 9, 10                                 | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://fedoraproject.org/favicon.ico" />` Fedora                                                                                                                                                                                       | 40, 41                                | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://www.openeuler.org/favicon.ico" />` openEuler                                                                                                                                                                                    | 20.03, 22.03, 24.03                   | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://static.opensuse.org/favicon.ico" />` openSUSE                                                                                                                                                                                   | 15.5, 15.6, Tumbleweed (滚动)         | 512 MB\* | 5 GB         |
+| `<img width="16" height="16" src="https://github.com/user-attachments/assets/99a542b6-6482-4086-addf-f192c06fef73" />` NixOS                                                                                                                                              | 24.11                                 | 512 MB   | 5 GB         |
+| `<img width="16" height="16" src="https://archlinux.org/static/favicon.png" />` Arch                                                                                                                                                                                      | 滚动                                  | 512 MB   | 5 GB         |
+| `<img width="16" height="16" src="https://www.gentoo.org/assets/img/logo/gentoo-g.png" />` Gentoo                                                                                                                                                                         | 滚动                                  | 512 MB   | 5 GB         |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (DD)                                                                                                               | 任何                                  | 512 MB   | 取决于镜像   |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (ISO)                                                                                                              | Vista, 7, 8.x (Server 2008 ~ 2012 R2) | 512 MB   | 25 GB        |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (ISO)                                                                                                              | 10, 11 (Server 2016 ~ 2025)           | 1 GB     | 25 GB        |
 
 \* 表示使用云镜像安装，非传统网络安装
 
@@ -59,23 +60,23 @@
 > [!WARNING]
 > ❌ 本脚本不支持 OpenVZ、LXC 虚拟机
 >
-> 请改用 <https://github.com/LloydAsp/OsMutation>
+> 请改用 [https://github.com/LloydAsp/OsMutation](https://github.com/LloydAsp/OsMutation)
 
-## 下载（当前系统是 <img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux）
+## 下载（当前系统是 `<img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" />` Linux）
 
 国外服务器：
 
 ```bash
-curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_
+curl -O https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.sh || wget -O reinstall.sh $_
 ```
 
 国内服务器：
 
 ```bash
-curl -O https://ghproxy.net/bin456789/reinstall/-/raw/main/reinstall.sh || wget -O reinstall.sh $_
+curl -O https://ghproxy.net/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.sh || wget -O reinstall.sh $_
 ```
 
-## 下载（当前系统是 <img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows）
+## 下载（当前系统是 `<img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows）
 
 > [!IMPORTANT]
 > 请先关闭 `Windows Defender` 的 `实时保护` 功能。该功能会阻止 `certutil` 下载任何文件。
@@ -88,9 +89,8 @@ curl -O https://ghproxy.net/bin456789/reinstall/-/raw/main/reinstall.sh || wget 
 
 用 IE 下载 (先在 IE 高级设置里启用 TLS 1.2)，或者通过远程桌面，将这两个文件保存到同一个目录
 
-- <https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat>
-
-- <https://www.cygwin.com/setup-x86.exe>
+- [https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat](https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat)
+- [https://www.cygwin.com/setup-x86.exe](https://www.cygwin.com/setup-x86.exe)
 
 使用时运行下载的 `reinstall.bat`
 
@@ -99,13 +99,13 @@ curl -O https://ghproxy.net/bin456789/reinstall/-/raw/main/reinstall.sh || wget 
 国外服务器：
 
 ```batch
-certutil -urlcache -f -split https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat
+certutil -urlcache -f -split https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat
 ```
 
 国内服务器：
 
 ```batch
-certutil -urlcache -f -split https://ghproxy.net/bin456789/reinstall/-/raw/main/reinstall.bat
+certutil -urlcache -f -split https://ghproxy.net/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat
 ```
 
 ## 使用
@@ -115,13 +115,13 @@ certutil -urlcache -f -split https://ghproxy.net/bin456789/reinstall/-/raw/main/
 - Linux 下运行 `bash reinstall.sh`
 - Windows 下运行 `.\reinstall.bat`
 
-### 功能 1: 安装 <img width="16" height="16" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux
+### 功能 1: 安装 `<img width="16" height="16" src="https://www.kernel.org/theme/images/logos/favicon.png" />` Linux
 
 - 用户名 `root` 默认密码 `123@@@`，首次开机可能要等几分钟才能成功登录
 - 安装最新版可不输入版本号
 - 最大化利用磁盘空间：不含 boot 分区（Fedora 例外），不含 swap 分区
 - 自动根据机器类型选择不同的优化内核，例如 `Cloud`、`HWE` 内核
-- 安装 Red Hat 时需填写 <https://access.redhat.com/downloads/content/rhel> 得到的 `qcow2` 镜像链接
+- 安装 Red Hat 时需填写 [https://access.redhat.com/downloads/content/rhel](https://access.redhat.com/downloads/content/rhel) 得到的 `qcow2` 镜像链接
 - 重装后如需修改 SSH 端口或者改成密钥登录，注意还要修改 `/etc/ssh/sshd_config.d/` 里面的文件
 
 ```bash
@@ -155,7 +155,7 @@ bash reinstall.sh anolis      7|8
 > 安装 Debian/Kali 时，x86 可通过后台 VNC 查看安装进度，ARM 可通过串行控制台查看安装进度。
 >
 > 安装其它系统时，可通过多种方式（SSH、HTTP 80 端口、后台 VNC、串行控制台）查看安装进度。
-> <br />即使安装过程出错，也能通过 SSH 运行 `/trans.sh alpine` 安装到 Alpine。
+> `<br />`即使安装过程出错，也能通过 SSH 运行 `/trans.sh alpine` 安装到 Alpine。
 
 <details>
 
@@ -209,9 +209,9 @@ bash reinstall.sh dd --img https://example.com/xxx.xz
 
 > [!TIP]
 > 可通过多种方式（SSH、HTTP 80 端口、后台 VNC、串行控制台）查看安装进度。
-> <br />即使安装过程出错，也能通过 SSH 运行 `/trans.sh alpine` 安装到 Alpine。
+> `<br />`即使安装过程出错，也能通过 SSH 运行 `/trans.sh alpine` 安装到 Alpine。
 
-### 功能 3: 重启到 <img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" /> Alpine Live OS（救援系统）
+### 功能 3: 重启到 `<img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" />` Alpine Live OS（救援系统）
 
 - 可用 ssh 连接，进行备份/恢复硬盘、手动 DD、修改分区、手动安装 Alpine/Arch/Gentoo 等操作
 - 用户名 `root` 默认密码 `123@@@`
@@ -226,7 +226,7 @@ bash reinstall.sh alpine --hold=1
 - `--password PASSWORD` 设置密码
 - `--ssh-port PORT` 修改 SSH 端口
 
-### 功能 4: 重启到 <img width="16" height="16" src="https://netboot.xyz/img/favicon.ico" /> netboot.xyz
+### 功能 4: 重启到 `<img width="16" height="16" src="https://netboot.xyz/img/favicon.ico" />` netboot.xyz
 
 - 可使用商家后台 VNC 手动安装 [更多系统](https://github.com/netbootxyz/netboot.xyz?tab=readme-ov-file#what-operating-systems-are-currently-available-on-netbootxyz)
 - 如果手动操作没有破坏原系统，再次重启将回到原系统
@@ -237,7 +237,7 @@ bash reinstall.sh netboot.xyz
 
 ![netboot.xyz](https://netboot.xyz/images/netboot.xyz.gif)
 
-### 功能 5: 安装 <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows ISO
+### 功能 5: 安装 `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows ISO
 
 ![Windows 安装界面](https://github.com/bin456789/reinstall/assets/7548515/07c1aea2-1ce3-4967-904f-aaf9d6eec3f7)
 
@@ -258,7 +258,7 @@ bash reinstall.sh netboot.xyz
 #### 方法 1: 让脚本自动查找 ISO （推荐）
 
 - 通常情况下 Windows 每个月都会发布新的官方 ISO，集成了最新的系统补丁，避免了刚安装好系统就要下载一堆补丁
-- 脚本会从 <https://massgrave.dev/genuine-installation-media> 查找 ISO，该网站收录了每月发布的 ISO，因此脚本查找到的 ISO 都是官方最新版
+- 脚本会从 [https://massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media) 查找 ISO，该网站收录了每月发布的 ISO，因此脚本查找到的 ISO 都是官方最新版
 - 上面带 \* 的系统不支持自动查找 ISO
 
 ```bash
@@ -328,18 +328,18 @@ bash reinstall.sh windows \
 
 <summary>以下网站可找到 ISO 链接</summary>
 
-- <https://massgrave.dev/genuine-installation-media> (推荐，iso 来自官方，每月更新，包含最新补丁)
-- <https://www.microsoft.com/software-download/windows10> (需用非 Windows User-Agent 打开)
-- <https://www.microsoft.com/software-download/windows11>
-- <https://www.microsoft.com/software-download/windowsinsiderpreviewiso> (预览版)
-- <https://www.microsoft.com/evalcenter/download-windows-10-enterprise>
-- <https://www.microsoft.com/evalcenter/download-windows-11-enterprise>
-- <https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2012-r2>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2016>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2019>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2022>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2025>
+- [https://massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media) (推荐，iso 来自官方，每月更新，包含最新补丁)
+- [https://www.microsoft.com/software-download/windows10](https://www.microsoft.com/software-download/windows10) (需用非 Windows User-Agent 打开)
+- [https://www.microsoft.com/software-download/windows11](https://www.microsoft.com/software-download/windows11)
+- [https://www.microsoft.com/software-download/windowsinsiderpreviewiso](https://www.microsoft.com/software-download/windowsinsiderpreviewiso) (预览版)
+- [https://www.microsoft.com/evalcenter/download-windows-10-enterprise](https://www.microsoft.com/evalcenter/download-windows-10-enterprise)
+- [https://www.microsoft.com/evalcenter/download-windows-11-enterprise](https://www.microsoft.com/evalcenter/download-windows-11-enterprise)
+- [https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval](https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2012-r2](https://www.microsoft.com/evalcenter/download-windows-server-2012-r2)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2016](https://www.microsoft.com/evalcenter/download-windows-server-2016)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2019](https://www.microsoft.com/evalcenter/download-windows-server-2019)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2022](https://www.microsoft.com/evalcenter/download-windows-server-2022)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2025](https://www.microsoft.com/evalcenter/download-windows-server-2025)
 
 </details>
 
@@ -388,12 +388,12 @@ Windows Server 2025 SERVERDATACENTER
 > [!WARNING]
 > 未开启 CSM 的 EFI 机器，无法安装 Windows 7 (Server 2008 R2)
 >
-> Hyper-V (Azure) 需选择合适的虚拟机代系 <https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v>
+> Hyper-V (Azure) 需选择合适的虚拟机代系 [https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v](https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v)
 
 > [!WARNING]
 > Windows 10 LTSC 2021 中文版镜像 `zh-cn_windows_10_enterprise_ltsc_2021_x64_dvd_033b7312.iso` 的 `wsappx` 进程会长期占用 CPU
 >
-> 解决方法是更新系统补丁，或者手动安装 `VCLibs` 库 <https://www.google.com/search?q=ltsc+wsappx>
+> 解决方法是更新系统补丁，或者手动安装 `VCLibs` 库 [https://www.google.com/search?q=ltsc+wsappx](https://www.google.com/search?q=ltsc+wsappx)
 
 #### ARM 安装 Windows 的注意事项
 
@@ -403,12 +403,12 @@ Windows Server 2025 SERVERDATACENTER
 
 | 兼容性 | 云服务商 | 实例类型      | 问题                                                                         |
 | ------ | -------- | ------------- | ---------------------------------------------------------------------------- |
-| ✔️     | Azure    | B2pts_v2      |                                                                              |
-| ✔️     | 阿里云   | g6r, c6r      |                                                                              |
-| ✔️     | 阿里云   | g8y, c8y, r8y | 有几率重启时卡开机 Logo，强制重启即可                                        |
-| ✔️     | AWS      | T4g           |                                                                              |
-| ✔️     | Scaleway | COPARM1       |                                                                              |
-| ✔️     | Gcore    |               |                                                                              |
+| ✔️   | Azure    | B2pts_v2      |                                                                              |
+| ✔️   | 阿里云   | g6r, c6r      |                                                                              |
+| ✔️   | 阿里云   | g8y, c8y, r8y | 有几率重启时卡开机 Logo，强制重启即可                                        |
+| ✔️   | AWS      | T4g           |                                                                              |
+| ✔️   | Scaleway | COPARM1       |                                                                              |
+| ✔️   | Gcore    |               |                                                                              |
 | ❔     | 甲骨文云 | A1.Flex       | 不一定能安装成功，越新创建的实例越容易成功<br />安装后还需要手动加载显卡驱动 |
 | ❌     | 谷歌云   | t2a           | 缺少网卡驱动                                                                 |
 

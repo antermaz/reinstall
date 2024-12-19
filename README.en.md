@@ -7,6 +7,7 @@
 [![Lines of Code](https://tokei.rs/b1/github/bin456789/reinstall?category=code&label=Lines%20of%20Code&style=flat-square)](https://github.com/XAMPPRocky/tokei)
 [![Telegram Group](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/reinstall_os)
 [![Github Sponsors](https://img.shields.io/badge/sponsor-30363D?style=flat-square&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/bin456789)
+
 <!-- [![Lines of Code](https://aschey.tech/tokei/github/bin456789/reinstall?category=code&label=Lines%20of%20Code&style=flat-square)](https://github.com/aschey/vercel-tokei) -->
 
 One-Click Script to Reinstall System [中文](README.md)
@@ -31,26 +32,26 @@ The original system can be any system listed in the table.
 
 The system requirements for the target system are as follows:
 
-| Target System                                                                                                                                                                                                                                                   | Version                               | Memory    | Disk                   |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------- | ---------------------- |
-| <img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" /> Alpine                                                                                                                                                                         | 3.18, 3.19, 3.20, 3.21                | 256 MB    | 1 GB                   |
-| <img width="16" height="16" src="https://www.debian.org/favicon.ico" /> Debian                                                                                                                                                                                  | 9, 10, 11, 12                         | 256 MB    | 1 ~ 1.5 GB ^           |
-| <img width="16" height="16" src="https://github.com/bin456789/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" /> Kali                                                                                                                            | Rolling                               | 256 MB    | 1 ~ 1.5 GB ^           |
-| <img width="16" height="16" src="https://canonical-subiquity.readthedocs-hosted.com/en/latest/_static/favicon.png" /> Ubuntu                                                                                                                                    | 16.04, 18.04, 20.04, 22.04, 24.04     | 512 MB \* | 2 GB                   |
-| <img width="16" height="16" src="https://img.alicdn.com/imgextra/i1/O1CN01oJnJZg1yK4RzI4Rx2_!!6000000006559-2-tps-118-118.png" /> Anolis                                                                                                                        | 7, 8                                  | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://www.oracle.com/asset/web/favicons/favicon-32.png" /> Oracle                                                                                                                                                            | 7, 8, 9                               | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://www.redhat.com/favicon.ico" /> RedHat &nbsp; <img width="16" height="16" src="https://almalinux.org/fav/favicon.ico" /> AlmaLinux &nbsp; <img width="16" height="16" src="https://rockylinux.org/favicon.png" /> Rocky | 8, 9                                  | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://opencloudos.org/qq.ico" /> OpenCloudOS                                                                                                                                                                                 | 8, 9                                  | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://www.centos.org/assets/icons/favicon.svg" /> CentOS                                                                                                                                                                     | 9, 10                                 | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://fedoraproject.org/favicon.ico" /> Fedora                                                                                                                                                                               | 40, 41                                | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://www.openeuler.org/favicon.ico" /> openEuler                                                                                                                                                                            | 20.03, 22.03, 24.03                   | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://static.opensuse.org/favicon.ico" /> openSUSE                                                                                                                                                                           | 15.5, 15.6, Tumbleweed (Rolling)      | 512 MB \* | 5 GB                   |
-| <img width="16" height="16" src="https://github.com/user-attachments/assets/99a542b6-6482-4086-addf-f192c06fef73" /> NixOS                                                                                                                                      | 24.11                                 | 512 MB    | 5 GB                   |
-| <img width="16" height="16" src="https://archlinux.org/static/favicon.png" /> Arch                                                                                                                                                                              | Rolling                               | 512 MB    | 5 GB                   |
-| <img width="16" height="16" src="https://www.gentoo.org/assets/img/logo/gentoo-g.png" /> Gentoo                                                                                                                                                                 | Rolling                               | 512 MB    | 5 GB                   |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (DD)                                                                                                       | Any                                   | 512 MB    | Depending on the image |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (ISO)                                                                                                      | Vista, 7, 8.x (Server 2008 ~ 2012 R2) | 512 MB    | 25 GB                  |
-| <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows (ISO)                                                                                                      | 10, 11 (Server 2016 ~ 2025)           | 1 GB      | 25 GB                  |
+| Target System                                                                                                                                                                                                                                                               | Version                               | Memory   | Disk                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | -------- | ---------------------- |
+| `<img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" />` Alpine                                                                                                                                                                                 | 3.18, 3.19, 3.20, 3.21                | 256 MB   | 1 GB                   |
+| `<img width="16" height="16" src="https://www.debian.org/favicon.ico" />` Debian                                                                                                                                                                                          | 9, 10, 11, 12                         | 256 MB   | 1 ~ 1.5 GB ^           |
+| `<img width="16" height="16" src="https://github.com/bin456789/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" />` Kali                                                                                                                                    | Rolling                               | 256 MB   | 1 ~ 1.5 GB ^           |
+| `<img width="16" height="16" src="https://canonical-subiquity.readthedocs-hosted.com/en/latest/_static/favicon.png" />` Ubuntu                                                                                                                                            | 16.04, 18.04, 20.04, 22.04, 24.04     | 512 MB\* | 2 GB                   |
+| `<img width="16" height="16" src="https://img.alicdn.com/imgextra/i1/O1CN01oJnJZg1yK4RzI4Rx2_!!6000000006559-2-tps-118-118.png" />` Anolis                                                                                                                                | 7, 8                                  | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://www.oracle.com/asset/web/favicons/favicon-32.png" />` Oracle                                                                                                                                                                    | 7, 8, 9                               | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://www.redhat.com/favicon.ico" />` RedHat &nbsp; `<img width="16" height="16" src="https://almalinux.org/fav/favicon.ico" />` AlmaLinux &nbsp; `<img width="16" height="16" src="https://rockylinux.org/favicon.png" />` Rocky | 8, 9                                  | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://opencloudos.org/qq.ico" />` OpenCloudOS                                                                                                                                                                                         | 8, 9                                  | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://www.centos.org/assets/icons/favicon.svg" />` CentOS                                                                                                                                                                             | 9, 10                                 | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://fedoraproject.org/favicon.ico" />` Fedora                                                                                                                                                                                       | 40, 41                                | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://www.openeuler.org/favicon.ico" />` openEuler                                                                                                                                                                                    | 20.03, 22.03, 24.03                   | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://static.opensuse.org/favicon.ico" />` openSUSE                                                                                                                                                                                   | 15.5, 15.6, Tumbleweed (Rolling)      | 512 MB\* | 5 GB                   |
+| `<img width="16" height="16" src="https://github.com/user-attachments/assets/99a542b6-6482-4086-addf-f192c06fef73" />` NixOS                                                                                                                                              | 24.11                                 | 512 MB   | 5 GB                   |
+| `<img width="16" height="16" src="https://archlinux.org/static/favicon.png" />` Arch                                                                                                                                                                                      | Rolling                               | 512 MB   | 5 GB                   |
+| `<img width="16" height="16" src="https://www.gentoo.org/assets/img/logo/gentoo-g.png" />` Gentoo                                                                                                                                                                         | Rolling                               | 512 MB   | 5 GB                   |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (DD)                                                                                                               | Any                                   | 512 MB   | Depending on the image |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (ISO)                                                                                                              | Vista, 7, 8.x (Server 2008 ~ 2012 R2) | 512 MB   | 25 GB                  |
+| `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows (ISO)                                                                                                              | 10, 11 (Server 2016 ~ 2025)           | 1 GB     | 25 GB                  |
 
 \* Indicates installation using cloud images, not traditional network installation.
 
@@ -59,23 +60,23 @@ The system requirements for the target system are as follows:
 > [!WARNING]
 > ❌ This script does not support OpenVZ or LXC virtual machines.
 >
-> Please use <https://github.com/LloydAsp/OsMutation> instead.
+> Please use [https://github.com/LloydAsp/OsMutation](https://github.com/LloydAsp/OsMutation) instead.
 
-## Download (Current system is <img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux)
+## Download (Current system is `<img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" />` Linux)
 
 For server outside China:
 
 ```bash
-curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh || wget -O reinstall.sh $_
+curl -O https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.sh || wget -O reinstall.sh $_
 ```
 
 For server inside China:
 
 ```bash
-curl -O https://jihulab.com/bin456789/reinstall/-/raw/main/reinstall.sh || wget -O reinstall.sh $_
+curl -O https://ghproxy.net/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.sh || wget -O reinstall.sh $_
 ```
 
-## Download (Current system is <img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows)
+## Download (Current system is `<img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows)
 
 > [!IMPORTANT]
 > Before proceeding, please disable the 'Real-time protection' feature in `Windows Defender`. This feature may prevent `certutil` from downloading any files.
@@ -88,9 +89,8 @@ Due to lack of support for TLS 1.2, SHA-256, or outdated root certificates, Wind
 
 Use Internet Explorer (enable TLS 1.2 in IE's advanced settings first) to download, or use Remote Desktop to save the following two files into the same directory:
 
-- <https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat>
-
-- <https://www.cygwin.com/setup-x86.exe>
+- [https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat](https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat)
+- [https://www.cygwin.com/setup-x86.exe](https://www.cygwin.com/setup-x86.exe)
 
 To use, run the downloaded `reinstall.bat`.
 
@@ -99,7 +99,7 @@ To use, run the downloaded `reinstall.bat`.
 For server outside China:
 
 ```batch
-certutil -urlcache -f -split https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat
+certutil -urlcache -f -split https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.bat
 ```
 
 For server inside China:
@@ -115,13 +115,13 @@ certutil -urlcache -f -split https://jihulab.com/bin456789/reinstall/-/raw/main/
 - on Linux, execute `bash reinstall.sh`
 - on Windows, execute `.\reinstall.bat`
 
-### Feature 1: Install <img width="16" height="16" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux
+### Feature 1: Install `<img width="16" height="16" src="https://www.kernel.org/theme/images/logos/favicon.png" />` Linux
 
 - The username is `root` with a default password of `123@@@`. It may take a few minutes after the first boot to successfully log in.
 - When installing the latest version, the version number does not need to be specified.
 - Maximizes disk space usage: no boot partition (except for Fedora) and no swap partition.
 - Automatically selects different optimized kernels based on machine type, such as `Cloud` or `HWE` kernels.
-- When installing Red Hat, you must provide the `qcow2` image link obtained from <https://access.redhat.com/downloads/content/rhel>.
+- When installing Red Hat, you must provide the `qcow2` image link obtained from [https://access.redhat.com/downloads/content/rhel](https://access.redhat.com/downloads/content/rhel).
 - After reinstallation, if you need to change the SSH port or switch to key-based login, make sure to also modify the files inside `/etc/ssh/sshd_config.d/`.
 
 ```bash
@@ -155,7 +155,7 @@ bash reinstall.sh anolis      7|8
 > When installing Debian/Kali, x86 architectures can monitor the installation progress through VNC in the background, while ARM architectures can use the serial console.
 >
 > When installing other systems, can monitor the progress through various methods (SSH, HTTP 80 port, VNC in the background, serial console).
-> <br />Even if errors occur during the installation process, you can still install to Alpine via SSH by running `/trans.sh alpine`
+> `<br />`Even if errors occur during the installation process, you can still install to Alpine via SSH by running `/trans.sh alpine`
 
 <details>
 
@@ -209,9 +209,9 @@ bash reinstall.sh dd --img https://example.com/xxx.xz
 
 > [!TIP]
 > Can monitor the progress through various methods (SSH, HTTP 80 port, VNC in the background, serial console).
-> <br />Even if errors occur during the installation process, you can still install to Alpine via SSH by running `/trans.sh alpine`
+> `<br />`Even if errors occur during the installation process, you can still install to Alpine via SSH by running `/trans.sh alpine`
 
-### Feature 3: Reboot to <img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" /> Alpine Rescue System (Live OS)
+### Feature 3: Reboot to `<img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" />` Alpine Rescue System (Live OS)
 
 - You can use SSH to backup/restore disk, manually perform DD operations, modify partitions, and manually install Alpine, Arch, Gentoo, and other systems.
 - Username `root`, Default password `123@@@`
@@ -226,7 +226,7 @@ bash reinstall.sh alpine --hold=1
 - `--password PASSWORD` Set password
 - `--ssh-port PORT` Change SSH port
 
-### Feature 4: Reboot to <img width="16" height="16" src="https://netboot.xyz/img/favicon.ico" /> netboot.xyz
+### Feature 4: Reboot to `<img width="16" height="16" src="https://netboot.xyz/img/favicon.ico" />` netboot.xyz
 
 - Can manually install [more systems](https://github.com/netbootxyz/netboot.xyz?tab=readme-ov-file#what-operating-systems-are-currently-available-on-netbootxyz) using vendor backend VNC.
 - If manual operations do not damage the original system, rebooting will return to the original system.
@@ -237,7 +237,7 @@ bash reinstall.sh netboot.xyz
 
 ![netboot.xyz](https://netboot.xyz/images/netboot.xyz.gif)
 
-### Feature 5: Install <img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows ISO
+### Feature 5: Install `<img width="16" height="16" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" />` Windows ISO
 
 ![Windows Installation](https://github.com/bin456789/reinstall/assets/7548515/07c1aea2-1ce3-4967-904f-aaf9d6eec3f7)
 
@@ -258,7 +258,7 @@ bash reinstall.sh netboot.xyz
 #### Method 1: Let the Script Automatically Search for ISO (Recommended)
 
 - Typically, Windows releases new official ISOs every month, which integrate the latest system patches, avoiding the need to download a bunch of updates right after installation.
-- The script will search for ISOs from <https://massgrave.dev/genuine-installation-media>, a site that collects monthly released ISOs, ensuring that the ISOs found by the script are the official latest versions.
+- The script will search for ISOs from [https://massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media), a site that collects monthly released ISOs, ensuring that the ISOs found by the script are the official latest versions.
 - Systems marked with \* do not support automatic ISO searching.
 
 ```bash
@@ -328,18 +328,18 @@ bash reinstall.sh windows \
 
 <summary>The following website provides ISO links.</summary>
 
-- <https://massgrave.dev/genuine-installation-media> (Recommended, iso sourced from official channels, updated monthly, includes the latest patches)
-- <https://www.microsoft.com/software-download/windows10> (Need to open it with a non-Windows User-Agent)
-- <https://www.microsoft.com/software-download/windows11>
-- <https://www.microsoft.com/software-download/windowsinsiderpreviewiso> (Preview)
-- <https://www.microsoft.com/evalcenter/download-windows-10-enterprise>
-- <https://www.microsoft.com/evalcenter/download-windows-11-enterprise>
-- <https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2012-r2>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2016>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2019>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2022>
-- <https://www.microsoft.com/evalcenter/download-windows-server-2025>
+- [https://massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media) (Recommended, iso sourced from official channels, updated monthly, includes the latest patches)
+- [https://www.microsoft.com/software-download/windows10](https://www.microsoft.com/software-download/windows10) (Need to open it with a non-Windows User-Agent)
+- [https://www.microsoft.com/software-download/windows11](https://www.microsoft.com/software-download/windows11)
+- [https://www.microsoft.com/software-download/windowsinsiderpreviewiso](https://www.microsoft.com/software-download/windowsinsiderpreviewiso) (Preview)
+- [https://www.microsoft.com/evalcenter/download-windows-10-enterprise](https://www.microsoft.com/evalcenter/download-windows-10-enterprise)
+- [https://www.microsoft.com/evalcenter/download-windows-11-enterprise](https://www.microsoft.com/evalcenter/download-windows-11-enterprise)
+- [https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval](https://www.microsoft.com/evalcenter/download-windows-11-iot-enterprise-ltsc-eval)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2012-r2](https://www.microsoft.com/evalcenter/download-windows-server-2012-r2)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2016](https://www.microsoft.com/evalcenter/download-windows-server-2016)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2019](https://www.microsoft.com/evalcenter/download-windows-server-2019)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2022](https://www.microsoft.com/evalcenter/download-windows-server-2022)
+- [https://www.microsoft.com/evalcenter/download-windows-server-2025](https://www.microsoft.com/evalcenter/download-windows-server-2025)
 
 </details>
 
@@ -388,12 +388,12 @@ Open File menu > Open Image File, select the iso to be installed to get the imag
 > [!WARNING]
 > For EFI machines without CSM enabled, Windows 7 (Server 2008 R2) cannot be installed.
 >
-> Hyper-V (Azure) requires selecting the appropriate VM generation: <https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v>
+> Hyper-V (Azure) requires selecting the appropriate VM generation: [https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v](https://learn.microsoft.com/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v)
 
 > [!WARNING]
 > In the Chinese version of Windows 10 LTSC 2021 ISO `zh-cn_windows_10_enterprise_ltsc_2021_x64_dvd_033b7312.iso`, the `wsappx` process may indefinitely consume CPU resources.
 >
-> The solution is to update the system patches or manually install the `VCLibs` library <https://www.google.com/search?q=ltsc+wsappx>.
+> The solution is to update the system patches or manually install the `VCLibs` library [https://www.google.com/search?q=ltsc+wsappx](https://www.google.com/search?q=ltsc+wsappx).
 
 #### Considerations for Installing Windows on ARM
 
@@ -403,12 +403,12 @@ During the installation process, you might encounter a black screen, and the ser
 
 | Compatibility | Cloud Provider | Instance Type | Issues                                                                                                                                                 |
 | ------------- | -------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ✔️            | Azure          | B2pts_v2      |                                                                                                                                                        |
-| ✔️            | Alibaba Cloud  | g6r, c6r      |                                                                                                                                                        |
-| ✔️            | Alibaba Cloud  | g8y, c8y, r8y | There is a chance of hanging at the boot logo during restart; forced reboot will resolve it.                                                           |
-| ✔️            | AWS            | T4g           |                                                                                                                                                        |
-| ✔️            | Scaleway       | COPARM1       |                                                                                                                                                        |
-| ✔️            | Gcore          |               |                                                                                                                                                        |
+| ✔️          | Azure          | B2pts_v2      |                                                                                                                                                        |
+| ✔️          | Alibaba Cloud  | g6r, c6r      |                                                                                                                                                        |
+| ✔️          | Alibaba Cloud  | g8y, c8y, r8y | There is a chance of hanging at the boot logo during restart; forced reboot will resolve it.                                                           |
+| ✔️          | AWS            | T4g           |                                                                                                                                                        |
+| ✔️          | Scaleway       | COPARM1       |                                                                                                                                                        |
+| ✔️          | Gcore          |               |                                                                                                                                                        |
 | ❔            | Oracle Cloud   | A1.Flex       | Installation success is not guaranteed; newer instances are more likely to succeed.<br />Manual loading of GPU drivers is required after installation. |
 | ❌            | Google Cloud   | t2a           | Missing network card drivers                                                                                                                           |
 

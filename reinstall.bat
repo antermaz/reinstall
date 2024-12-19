@@ -2,9 +2,9 @@
 mode con cp select=437 >nul
 setlocal EnableDelayedExpansion
 
-set confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
-set confhome_cn=https://ghproxy.net/bin456789/reinstall/-/raw/main
-rem set confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/bin456789/reinstall/main
+set confhome=https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main
+set confhome_cn=https://ghproxy.net/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main
+rem set confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main
 
 rem 65001 代码页会乱码
 
