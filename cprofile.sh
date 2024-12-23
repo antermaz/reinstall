@@ -1,3 +1,5 @@
+apk update
+apk add curl bash
 curl -O https://ghproxy.net/https://raw.githubusercontent.com/antermaz/reinstall/refs/heads/main/reinstall.sh || wget -O reinstall.sh $_
 chmod 755 reinstall.sh
 bash reinstall.sh windows \
