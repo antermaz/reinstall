@@ -55,7 +55,8 @@ if (Test-Path $outputPath) {
 # Install prerequisites
 # ============================================================================ #
 
-Write-Section "Prerequisites"
+# Write-Section "Prerequisites"
+Write-Host "Prerequisites" -ForegroundColor Green
 
 try {
     # Define the architecture (e.g., x64, x86, arm)
