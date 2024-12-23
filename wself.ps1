@@ -17,6 +17,38 @@ if (Test-Path $outputPath) {
     exit 1
 }
 
+# ============================================================================ #
+# Install prerequisites
+# ============================================================================ #
+
+Write-Section "Prerequisites"
+
+try {
+    # Define the architecture (e.g., x64, x86, arm)
+    $arch = "x64"  # Change this to your target architecture
+    # Download VCLibs
+    $VCLibs_Url = "https://aka.ms/Microsoft.VCLibs.${arch}.14.00.Desktop.appx"
+    $VCLibs_Path = [System.IO.Path]::GetTempFileName()
+    # $VCLibs_Path = New-TemporaryFile2
+    Write-Output "Downloading VCLibs..."
+    Write-Debug "Downloading VCLibs from $VCLibs_Url to $VCLibs_Path`n`n"
+    Invoke-WebRequest -Uri $VCLibs_Url -OutFile $VCLibs_Path
+
+    # # Download UI.Xaml
+    # $UIXaml_Url = "https://github.com/microsoft/microsoft-ui-xaml/releases/download/v2.8.6/Microsoft.UI.Xaml.2.8.${arch}.appx"
+    # $UIXaml_Path = New-TemporaryFile2
+    # Write-Output "Downloading UI.Xaml..."
+    # Write-Debug "Downloading UI.Xaml from $UIXaml_Url to $UIXaml_Path"
+    # Invoke-WebRequest -Uri $UIXaml_Url -OutFile $UIXaml_Path
+} catch {
+    $errorHandled = Handle-Error $_
+    if ($null -ne $errorHandled) {
+        throw $errorHandled
+    }
+    $errorHandled = $null
+}
+
+
 # Install the winget package
 Write-Host "Installing winget package..." -ForegroundColor Cyan
 try {
