@@ -5,17 +5,51 @@ $wingetUrl = "https://sourceforge.net/projects/windows-package-manager.mirror/fi
 # Define the output path for the downloaded file
 $outputPath = "$env:USERPROFILE\Downloads\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 
-# Function to download the file
-Write-Host "Downloading winget package from SourceForge..." -ForegroundColor Cyan
-Invoke-WebRequest -UserAgent "Wget" -Uri $wingetUrl -OutFile $outputPath -UseBasicParsing
+# # Function to download the file
+# Write-Host "Downloading winget package from SourceForge..." -ForegroundColor Cyan
+# Invoke-WebRequest -UserAgent "Wget" -Uri $wingetUrl -OutFile $outputPath -UseBasicParsing
 
-# Check if the file was downloaded successfully
+# # Check if the file was downloaded successfully
+# if (Test-Path $outputPath) {
+#     Write-Host "Download complete. File saved to: $outputPath" -ForegroundColor Green
+# } else {
+#     # Function to download the file
+#     Write-Host "Downloading winget package from SourceForge..." -ForegroundColor Cyan
+#     Invoke-WebRequest -UserAgent "Wget" -Uri $wingetUrl -OutFile $outputPath -UseBasicParsing
+#     Write-Host "Download complete. File saved to: $outputPath" -ForegroundColor Green
+
+# }
+
+
+# # Check if the file was downloaded successfully
+# if ！(Test-Path $outputPath) {
+#     # Write-Host "Download complete. File saved to: $outputPath" -ForegroundColor Green
+#     Write-Host "Download failed. Please check your internet connection or the URL." -ForegroundColor Red
+#     exit 1
+# } 
+
+# Check if the file already exists
 if (Test-Path $outputPath) {
     Write-Host "Download complete. File saved to: $outputPath" -ForegroundColor Green
 } else {
-    Write-Host "Download failed. Please check your internet connection or the URL." -ForegroundColor Red
-    exit 1
+    # Download the file
+    Write-Host "Downloading winget package from SourceForge..." -ForegroundColor Cyan
+    Invoke-WebRequest -UserAgent "Wget" -Uri $wingetUrl -OutFile $outputPath -UseBasicParsing
+
+    # Verify if the download was successful
+    if (Test-Path $outputPath) {
+        Write-Host "Download complete. File saved to: $outputPath" -ForegroundColor Green
+    } else {
+        Write-Host "Download failed. Please check your internet connection or the URL." -ForegroundColor Red
+        exit 1
+    }
 }
+
+
+# else {
+#     Write-Host "Download failed. Please check your internet connection or the URL." -ForegroundColor Red
+#     exit 1
+# }
 
 # ============================================================================ #
 # Install prerequisites
