@@ -206,7 +206,7 @@ mkdir "%~dp2" 2>nul
 echo URL_aria: %1
 echo Output_aria: %2
 echo "aria2 command: "%~dp0aria2c.exe" "%1" -o "%2" -c"
-"%~dp0aria2c.exe" "%1" -o "%2" -c
+"%~dp0aria2c.exe" "%1" -d "%~dp2" -o "%~nx2"
 if %errorlevel% neq 0 exit /b 1
 exit /b
 
