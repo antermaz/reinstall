@@ -159,18 +159,26 @@ exit /b
 
 
 
+@REM :download
+@REM rem bits 要求有 Content-Length 才能下载
+@REM rem 据说如果网络设为“按流量计费” bits 也无法下载
+@REM rem https://learn.microsoft.com/en-us/windows/win32/bits/http-requirements-for-bits-downloads
+@REM rem certutil 会被 windows Defender 报毒
+@REM rem windows server 2019 要用第二条 certutil 命令
+@REM echo Download: %~1 %~2
+@REM del /q "%~2" 2>nul
+@REM if exist "%~2" (echo Cannot delete %~2 & exit /b 1)
+@REM if not exist "%~2" certutil -urlcache -f -split "%~1" "%~2" >nul
+@REM if not exist "%~2" certutil -urlcache -split "%~1" "%~2" >nul
+@REM if not exist "%~2" exit /b 1
+@REM exit /b
+
 :download
-rem bits 要求有 Content-Length 才能下载
-rem 据说如果网络设为“按流量计费” bits 也无法下载
-rem https://learn.microsoft.com/en-us/windows/win32/bits/http-requirements-for-bits-downloads
-rem certutil 会被 windows Defender 报毒
-rem windows server 2019 要用第二条 certutil 命令
 echo Download: %~1 %~2
 del /q "%~2" 2>nul
 if exist "%~2" (echo Cannot delete %~2 & exit /b 1)
-if not exist "%~2" certutil -urlcache -f -split "%~1" "%~2" >nul
-if not exist "%~2" certutil -urlcache -split "%~1" "%~2" >nul
-if not exist "%~2" exit /b 1
+aria2c "%~1" -o "%~2" -c
+if %errorlevel% neq 0 exit /b 1
 exit /b
 
 :download_with_curl
