@@ -183,9 +183,13 @@ exit /b
 
 :download
 echo Download: %1 %2
+echo URL_in: %1
+echo Output_in: %2
 del /q "%2" 2>nul
 if exist "%2" (echo Cannot delete %2 & exit /b 1)
 mkdir "%~dp2" 2>nul
+echo URL_aria: %1
+echo Output_aria: %2
 ./aria2c.exe "%1" -o "%2" -c
 if %errorlevel% neq 0 exit /b 1
 exit /b
