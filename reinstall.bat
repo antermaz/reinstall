@@ -159,7 +159,7 @@ exit /b
 
 
 
-@REM :download
+@REM :download   ///version:1
 @REM rem bits 要求有 Content-Length 才能下载
 @REM rem 据说如果网络设为“按流量计费” bits 也无法下载
 @REM rem https://learn.microsoft.com/en-us/windows/win32/bits/http-requirements-for-bits-downloads
@@ -173,11 +173,20 @@ exit /b
 @REM if not exist "%~2" exit /b 1
 @REM exit /b
 
+@REM :download  ///version:2
+@REM echo Download: %~1 %~2
+@REM del /q "%~2" 2>nul
+@REM if exist "%~2" (echo Cannot delete %~2 & exit /b 1)
+@REM .\aria2c.exe "%1" -o "%2" -c
+@REM if %errorlevel% neq 0 exit /b 1
+@REM exit /b
+
 :download
-echo Download: %~1 %~2
-del /q "%~2" 2>nul
-if exist "%~2" (echo Cannot delete %~2 & exit /b 1)
-.\aria2c.exe "%~1" -o "%~2" -c
+echo Download: %1 %2
+del /q "%2" 2>nul
+if exist "%2" (echo Cannot delete %2 & exit /b 1)
+mkdir "%~dp2" 2>nul
+aria2c "%1" -o "%2" -c
 if %errorlevel% neq 0 exit /b 1
 exit /b
 
